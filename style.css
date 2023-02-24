@@ -1,0 +1,232 @@
+:root {
+    --clr-default1: #1B1E3D;
+    --clr-default2: #171933;
+    --clr-accent1: #5396E7;
+    --clr-accent2: #eb548f;
+    --clr-light: #d4dcff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: var(--clr-light);
+    font-family: 'Poppins', sans-serif;
+}
+
+strong {
+    color: var(--clr-accent1);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-default1);
+    padding: 1px
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-accent1);
+    border-radius: 4px
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--clr-default1);
+    height: 100vh;
+}
+
+svg {
+    cursor: pointer;
+    fill: var(--clr-accent1);
+    transition: all 0.2s ease;
+}
+
+svg:hover {
+    transform: translateY(-5px);
+    display: flex;
+    align-items: center;
+}
+
+button {
+    box-shadow:
+    0px 0px 19.4px rgba(0, 0, 0, 0.024),
+    0px 0px 27.7px rgba(0, 0, 0, 0.035),
+    0px 0px 30.2px rgba(0, 0, 0, 0.046),
+    0px 0px 31px rgba(0, 0, 0, 0.07);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav */
+nav {
+    width: 85%;
+    height: 80px;
+    border-bottom: 1px solid var(--clr-accent1);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin: 0 30px 0 0;
+    transition: all 0.35s ease;
+}
+
+nav a:hover {
+    color: var(--clr-accent1);
+}
+
+/* Nav 1 */
+nav .nav1 {
+    margin: 0 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav #title {
+    font-size: 24px;
+    font-weight:bold;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+}
+
+/* Nav 2 */
+nav .nav2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav2 #homenavb {
+    margin: 0 30px 0 0px;
+}
+
+nav .nav2 svg, nav .nav3 svg {
+    margin: 0 10px 0 0;
+}
+
+/* Nav 3 */
+nav .nav3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 0;
+}
+
+nav .nav3 #register {
+    margin: 0;
+}
+
+/* Main section */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 0 7.5%;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    text-decoration: underline;
+}
+/* Aboute me section */
+#aboutme p {
+    max-width: 50%;
+}
+
+/* Games section */
+#games {
+    background-color: var(--clr-default2);
+    border-top: 2px solid var(--clr-accent1);
+    border-bottom: 2px solid var(--clr-accent1);
+}
+
+#games #ljdjp {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 1em;
+    color: var(--clr-accent1);
+    background-color: var(--clr-default1);
+    border: 10px solid var(--clr-accent1);
+    border-radius: 5px;
+    display: block;
+    margin:  20px auto;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+#games #ljdjp:hover {
+    transform: scale(1.05);
+    background-color: var(--clr-accent1);
+    color: var(--clr-default1);
+}
+
+#games p {
+    max-width: 25%;
+}
+
+#animations {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem 1em;
+    color: var(--clr-accent1);
+    background-color: var(--clr-default1);
+    border: 10px solid var(--clr-accent1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin:  20px auto;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+#animations:hover {
+    transform: scale(1.05);
+    background-color: var(--clr-accent1);
+    color: var(--clr-default1);
+}
+
+/* Apps section */
+#apps p {
+    max-width: 25%;
+}
+
+/* Footer section*/
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 85%;
+    height: 80px;
+    border-top: 1px solid var(--clr-accent1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .copyrights {
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    margin: 0 0 0 10px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--clr-accent1);
+}
